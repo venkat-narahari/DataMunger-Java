@@ -1,3 +1,7 @@
-<p>
-  parent1 works!
-</p>
+<div>
+  <h2>Scenario4-Parent1</h2>
+  <input type="text" (keyup)="onChange(input.value)" #input>
+  <div>-----------------------------------------------------</div>
+  <app-scenario4-child1 [data]=data></app-scenario4-child1>
+  <div>-----------------------------------------------------</div>
+</div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-child1',
+  selector: 'app-scenario1-child1',
   templateUrl: './child1.component.html',
   styleUrls: ['./child1.component.css']
 })

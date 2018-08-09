@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-scenario3-child1',
@@ -7,17 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Child1Component implements OnInit {
 
-  private data: string;
+  @Output() displayData = new EventEmitter();
+  private data:string;
 
   constructor() { }
 
   onChange(data:string){
     this.data=data;
+    this.displayData.emit(this.data);
   }
 
-  
-
-  ngOnInit() {
+  ngOnInit(): void {
   }
+
 
 }

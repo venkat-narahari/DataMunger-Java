@@ -1,19 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
-  selector: 'app-scenario3-child2',
+  selector: 'app-scenario3-child1',
   templateUrl: './child2.component.html',
   styleUrls: ['./child2.component.css']
 })
 export class Child2Component implements OnInit {
 
-  private sampleChildData:string;
+  private data:string;
 
   constructor() { }
-
-  public handleEvent(childData:any){
-		this.sampleChildData = childData;
-	}
 
   ngOnInit() {
   }

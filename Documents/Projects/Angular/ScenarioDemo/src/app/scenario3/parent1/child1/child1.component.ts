@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Output, EventEmitter } from '@angular/core';
+import { Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-scenario3-child1',
@@ -18,8 +18,7 @@ export class Child1Component implements OnInit {
     this.displayData.emit(this.data);
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
-
 
 }

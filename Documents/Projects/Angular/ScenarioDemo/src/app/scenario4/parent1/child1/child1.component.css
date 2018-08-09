@@ -1,5 +1,1 @@
-<div>
-  <h2>Scenario3-Child1</h2>
-  <input type="text" (keyup)="onChange(input.value)" #input>
-  <div>-----------------------------------------------------</div>
-</div>
+

@@ -8,6 +8,7 @@ import { Child2Component } from './parent1/child2/child2.component';
   imports: [
     CommonModule
   ],
-  declarations: [Parent1Component, Child1Component, Child2Component]
+  declarations: [Parent1Component, Child1Component, Child2Component],
+  exports:[Parent1Component, Child1Component, Child2Component]
 })
 export class Scenario3Module { }
